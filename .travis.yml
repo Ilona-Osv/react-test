@@ -6,4 +6,4 @@ before_install:
   - docker build -t ilonao/react-test -f dockerfile.dev .
 
 script:
-  - docker run -e CLI=true ilonao/react-test npm run test
+  - docker run -e CLI=true ilonao/react-test npm test
